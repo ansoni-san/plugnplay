@@ -29,7 +29,7 @@
     "prepare": "npm run build",
     "postinstall": "npm run build",
     "flow": "flow",
-    "build": "rimraf lib && flow-remove-types --all src/ --out-dir lib/ && copy ./src/**/plugnplay.yml lib && flow-copy-source src lib",
+    "build": "flow-remove-types src/ --out-dir lib/ && flow-copy-source src lib",
     "lint": "eslint src",
     "emdaer": "emdaer"
   },
